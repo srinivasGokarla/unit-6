@@ -11,7 +11,7 @@ function runProgram(input) {
   
     }
   
-  function freequency(arr,n){
+function freequency(arr,n){
     var obj = {}
     for(var i = 0; i < arr.length; i++)
 {
