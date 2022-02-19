@@ -1,0 +1,83 @@
+{
+  "student": [
+    {
+     
+      "Name": "Rohit Sharma",
+      "Grade": "A++",
+      "Age": "31",
+      "Gender": "Male",
+      "id": 1
+    },
+    {
+     
+      "Name": "Virat Khoili",
+      "Grade": "A++",
+      "Age": "30",
+      "Gender": "Male",
+      "id": 2
+    },
+    {
+      "Name": "Sekhar Dhawan",
+      "Grade": "A+",
+      "Age": "34",
+      "Gender": "Male",
+      "id": 3
+    },
+    {
+      "Name": "Dhoni",
+      "Grade": "A++++",
+      "Age": "36",
+      "Gender": "Male",
+      "id": 4
+    },
+    {
+      "Name": "Mithali",
+      "Grade": "A++",
+      "Age": "34",
+      "Gender": "FeMale",
+      "id": 5
+    },
+    {
+      "Name": "Harman Preeth Kour",
+      "Grade": "A++",
+      "Age": "28",
+      "Gender": "FeMale",
+      "id": 6
+    },
+    {
+      "Name": "Bhubaneswar Kumar",
+      "Grade": "A++",
+      "Age": "29",
+      "Gender": "Male",
+      "id": 7
+    },
+    {
+      "Name": "Smruthi Mandhana",
+      "Grade": "A+++",
+      "Age": "25",
+      "Gender": "FeMale",
+      "id": 8
+    },
+    {
+      "Name": "Deepthi Sharma",
+      "Grade": "A+",
+      "Age": "30",
+      "Gender": "FeMale",
+      "id": 9
+    },
+    {
+      "Name": "KL Rahul",
+      "Grade": "A+++",
+      "Age": "28",
+      "Gender": "Male",
+      "id": 10
+    },
+    {
+      "Name": "Ravindra Jadeja",
+      "Grade": "A++",
+      "Age": "32",
+      "Gender": "Male",
+      "id": 11
+    }
+  ]
+}

@@ -7,50 +7,39 @@
     <title>Document</title>
 </head>
 <style>
-  
- .hi { 
-     color: blue !important;
-     font-size:50px
- }
- #h1 { 
-     color: brown;
-     font-size: 50px;
- }
 
- #flex { 
-     display: flex;
-     background-color:green;
-     flex-direction: column;
-     gap: 20px;
-    
- } 
- #flex+div { 
-     font-size: 30px;
- }
 </style>
 <body>
-    with out tags
-    <div id="combi">
-     <p>p tag</p>
-    <p class="hi">HELLO WORLD</p>
-    <h1 id="h1">masai</h1>
-    <h2>h2</h2>
-    <p>srinivas</p>
-</div>
-<div>Divs
-    <p>inner p tag</p>
-</div>
-<h1>head lines</h1>
-<div id="flex">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-
-
-</div>
-<div>hai</div>
-<p>other</p>
+  <form id  = "nameForm">
+    <div>
+      <label for="fname">First name: </label>
+      <input id="fname" type="text">
+    </div>
+    <div>
+      <label for="lname">Last name: </label>
+      <input id="lname" type="text">
+    </div>
+    <div>
+       <input id="submit" type="submit">
+    </div>
+  </form>
+  <p id = "output"></p>
+    
 </body>
+<script>
+    var form = document.getElementById('nameForm');
+var fname = document.getElementById('fname');
+var lname = document.getElementById('lname');
+var submit = document.getElementById('submit');
+var para = document.getElementById('output');
+
+function validate(e){
+  if(fname.value == '' || lname.value == ''){
+    e.preventDefault()
+    para.textContent = "First name or last name is empty!"
+  }
+}
+
+form.addEventListener('submit', validate);
+</script>
 </html>
