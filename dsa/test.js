@@ -90,25 +90,25 @@
 
 // function constructor
 // constructor function
-function Person (person_name, person_age, person_gender) {
+// function Person (person_name, person_age, person_gender) {
 
-  // assigning  parameter values to the calling object
-   this.name = person_name,
-   this.age = person_age,
-   this.gender = person_gender,
+//   // assigning  parameter values to the calling object
+//    this.name = person_name,
+//    this.age = person_age,
+//    this.gender = person_gender,
 
-   this.greet = function () {
-       return ('Hi' + ' ' + this.name);
-   }
-}
+//    this.greet = function () {
+//        return ('Hi' + ' ' + this.name);
+//    }
+// }
 
 
 // // creating objects
-const person1 = new Person('John', 23, 'male');
+// const person1 = new Person('John', 23, 'male');
 // const person2 = new Person('Sam', 25, 'female');
 
 // // accessing properties
-console.log(person1.name); // "John"
+// console.log(person1.name); // "John"
 // console.log(person2.name); // "Sam"
 
 // // using object lateral
@@ -154,3 +154,10 @@ console.log(person1.name); // "John"
 
 // // hello
 // // Uncaught TypeError: person2.greet is not a function
+
+
+
+function main(name) {
+  console.log("my name is " + name)
+}
+main("srinivas")
