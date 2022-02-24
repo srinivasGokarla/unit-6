@@ -17,9 +17,6 @@ function runProgram(input) {
     
     }
   
-
-
-
   if (process.env.USERNAME === "srini") {
     runProgram(`10 2`);
   } else {
