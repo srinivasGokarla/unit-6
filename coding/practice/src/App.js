@@ -1,21 +1,48 @@
 import logo from './logo.svg';
 import './App.css';
-import{useState} from "react"
+import{useState, useEffect} from "react"
 
+// function App() {
+//    const[show, setShow] = useState(true)
+//      if(show === false) {
+//        return <button onClick={()=> setShow(true)}>Show</button>
+//      }
+//   return (
+//     <div className="App">
+//   <h1>srinivas</h1>
+//   <button onClick={()=> setShow(false)}>Hide</button>
+     
+//     </div>
+//   );
+// }
+// function App() {
+//   const[count,setCount] = useState(0);
+
+//   if(count < 0) {
+//   return <h1>Not possible to decrease count</h1>
+//   }
+//  return (
+//    <div className="App">
+//    <h1>count: {count}</h1>
+//    <button onClick={ () => setCount(count + 1)} >+</button>
+//    <button onClick={ () => setCount(count - 1)} >-</button>
+    
+//    </div>
+//  );
+// }
 function App() {
-
-  const[state, setState] = useState(true)
+  const[count,setCount] = useState(0);
+ useEffect(() => {
+  document.title = `chat(${count})`
+ })
+ return (
+   <div className="App">
+   <h1>count: {count}</h1>
+   <button onClick={ () => setCount(count + 1)} >+</button>
   
-if( state === false) {
-  return <button onClick={() => setState(true)}>Show</button>
-  
-}
-  return (
-    <div className="App">
-      <h1>Srinivas</h1>
-      <button onClick={() => setState(false) }>Hide</button>
-    </div>
-  );
+    
+   </div>
+ );
 }
 
 export default App;

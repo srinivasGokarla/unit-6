@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin-left: 500px;">
+    <h1 class="dis">count:</h1>
+  <button class="ad">+</button>
+  <button class="dec">-</button>
+
+</body>
+<script>
+  let dis = document.querySelector(".dis")
+  let ad = document.querySelector(".ad")
+  let dec = document.querySelector(".dec")
+
+  let count = 0;
+  display()
+
+  ad.addEventListener("click", function () {
+      if(count === 10) {
+          ad.removeEventListener("click")
+      } 
+        count++;
+      display()
+      
+    
+  })
+dec.addEventListener("click", function () {
+    count--;
+    display()
+})
+  
+
+  function display() {
+    
+     // console.log(count)
+     dis.innerHTML = count
+  }
+
+
+
+
+</script>
+</html>
