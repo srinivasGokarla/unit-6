@@ -31,18 +31,19 @@ import{useState, useEffect} from "react"
 //  );
 // }
 function App() {
-  const[count,setCount] = useState(0);
- useEffect(() => {
-  document.title = `chat(${count})`
- })
- return (
-   <div className="App">
-   <h1>count: {count}</h1>
-   <button onClick={ () => setCount(count + 1)} >+</button>
+//   const[count,setCount] = useState(0);
+//  useEffect(() => {
+//   document.title = `chat(${count})`
+//  })
+//  return (
+//    <div className="App">
+//    <h1>count: {count}</h1>
+//    <button onClick={ () => setCount(count + 1)} >+</button>
   
     
-   </div>
- );
+//    </div>
+//  );
+
 }
 
 export default App;
