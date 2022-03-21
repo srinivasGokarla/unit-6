@@ -17,11 +17,9 @@ function runProgram(input) {
         else{
             return ((n %2) + 10 * BinaryEquivalent(parseInt(n/2)))
         }
+     
+
     }
-
-  
-
-
 
   if (process.env.USERNAME === "srini") {
     runProgram(`2
