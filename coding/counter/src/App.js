@@ -1,19 +1,14 @@
-import{ useState, useEffect} from 'react'
+import './App.css';
 
+
+import {HomePage}from "./HomePage.jsx"
 function App() {
-  const [count,setCount] = useState(0)
- useEffect(() => {
-   document.title = `chats${count}`
- })
-  return <>
-  <h1>Counetr:{count}</h1>
-    <button onClick={() => setCount(count+1)}>+</button>
-    <button onClick={() => setCount(count-1)}>-</button>
-    <button onClick={() => setCount(0)}>Reset</button>
-    </>
-   
-    
-
+ 
+  return(
+    <div className='App'>
+         <HomePage/>
+        </div>
+  )
 }
 
 export default App;

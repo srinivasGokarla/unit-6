@@ -1,0 +1,22 @@
+.sliding_img{
+    width: 90%;
+} 
+
+.slider_articles{
+margin-left:  4%;
+margin-right: 2.5%;
+margin-top:20%
+}      
+
+.sliding_text{
+padding-top: 2%;
+text-align: left;
+padding-left: 1%;
+padding-right: 4%;
+font-size: small;
+font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.slider_div:hover{
+color: #06e;
+}

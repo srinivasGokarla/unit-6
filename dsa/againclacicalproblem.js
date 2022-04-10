@@ -1,7 +1,6 @@
 function runProgram(input) {
     input = input.trim().split("\n")
     var n = Number(input[0]);
-    
     var line = 1;
     for(var i = 0; i < n; i++){
         var str = input[line++].trim().split("")
