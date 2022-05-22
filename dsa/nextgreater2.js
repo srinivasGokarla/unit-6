@@ -1,17 +1,17 @@
 function runProgram(input) {
     input = input.trim().split("\n");
-    var testcases = Number(input[0])
-    var line = 1;
-    for(var i = 0; i < testcases; i++) {
-        var n = Number(input[line++])
-        var arr = input[line++].trim().split(" ").map(Number)
+    let testcases = Number(input[0])
+    let line = 1;
+    for(let i = 0; i < testcases; i++) {
+        let n = Number(input[line++])
+        let arr = input[line++].trim().split(" ").map(Number)
        // console.log(n,arr)
        console.log(NextGreaterElement(arr,n))
   }
 }
   function NextGreaterElement(arr,n){
-      var res = [-1], stack = [arr[n-1]]
-    for(var i = n-2; i >= 0; i--) {
+      let res = [-1], stack = [arr[n-1]]
+    for(let i = n-2; i >= 0; i--) {
      while(stack [stack.length-1] <= arr[i]){
         stack.pop()
      }if(stack.length === 0){
